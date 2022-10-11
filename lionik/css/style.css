@@ -1,0 +1,574 @@
+* {
+  box-sizing: border-box;
+}
+
+/* open-sans-300 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/open-sans-v29-latin-300.eot');
+  /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/open-sans-v29-latin-300.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/open-sans-v29-latin-300.woff') format('woff');
+  /* Modern Browsers */
+}
+
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/open-sans-v29-latin-regular.eot');
+  /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/open-sans-v29-latin-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/open-sans-v29-latin-regular.woff') format('woff');
+  /* Modern Browsers */
+}
+
+/* open-sans-600 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/open-sans-v29-latin-600.eot');
+  /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/open-sans-v29-latin-600.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/open-sans-v29-latin-600.woff') format('woff');
+  /* Modern Browsers */
+}
+
+a {
+  text-decoration: none;
+  /* все ссылки не подчеркиваются */
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  font-family: 'Open sans', sans-serif;
+}
+
+.container {
+   max-width: 1200px;
+  /* margin-right: auto; */
+  /* объекты распологаются поцентру */
+  /* margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; */
+  /*При сужение страницы контейнер не прилигает к краям
+ */
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  background-color: #3172b9;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  /* плавный переход в другой цвет */
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #1d456f;
+  /* при наведении */
+}
+
+.btn:active {
+  background-color: #dadada;
+  /* при нажатии */
+}
+
+.btn.btn-big {
+  padding: 20px 60px;
+}
+
+.section-heading {
+  margin-top: 0;
+  /* obnulyaem otstup H2 */
+  margin-bottom: 25px;
+  font-size: 36px;
+  line-height: 1.3;
+  font-weight: 300;
+  color: #414141;
+}
+
+.section-description {
+  margin-top: 0;
+  font-size: 16px;
+  line-height: 1.31;
+  color: #787878;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Header */
+
+.header {
+  height: 110px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.logo:focus {
+  /* наведение через таб */
+  outline: 3px solid #3172b9;
+}
+
+.nav-list {
+  display: flex;
+  margin: auto;
+}
+
+.nav-item {
+  font-size: 15px;
+  line-height: 1;
+
+}
+
+.nav-link {
+  font-size: 15px;
+  line-height: 1;
+  color: #1c1c1c;
+  transition: color 0.3s ease;
+  /* плавный переход в другой цвет */
+}
+
+.nav-link:hover {
+  color: #3172b9;
+}
+
+.nav-item.is-active .nav-link {
+  color: #3172b9;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header .btn {
+  margin-left: 40px;
+}
+
+
+/* Hero */
+
+.section-hero {
+  background: url('/5 LIONIC/img/Base@2x.jpg') right center no-repeat white;
+  /* настройка фоновой картинки */
+  background-size: cover;
+}
+
+.section-hero__container {
+  padding-top: 120px;
+  padding-bottom: 130px;
+}
+
+
+.section-hero__heading {
+  margin-top: 0px;
+  /* у Н1 есть свой маргин который нкжно удалить */
+  margin-bottom: 30px;
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 300;
+  color: #1c1c1c;
+}
+
+.section-hero__action {
+  display: inline-block;
+}
+
+.section-hero__description {
+  max-width: 480px;
+  margin-bottom: 33px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #787878;
+}
+
+.section-hero__btn-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 11px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  color: #787878
+}
+
+.section-hero__ssl-icon {
+  display: inline-block;
+  width: 13px;
+  height: 17px;
+  margin-right: 10px;
+  background: url('../img/ssl.svg') center center no-repeat transparent;
+  /* настройка фоновой свг картинки */
+  background-size: contain;
+  transform: translateY(-1px);
+  /* поднятие картинки на 1 пиксель вверх  */
+}
+
+/* What we do */
+
+.section-do {
+  padding-top: 140px;
+  padding-bottom: 100px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.section-description {
+  margin-top: 25px;
+}
+
+.section-do-list {
+  margin-top: 50px;
+}
+
+.section-do-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 30px;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+  transition-property: color, background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  /*transition: background-color color 0.3s ease; - плавный переход в другой цвет бека и шрифта в сокращенной записи одновременно невозможен, по этому нужно расписывать для каждую функцию отдельно */
+}
+
+.section-do-item:hover {
+  background-color: #3172b9;
+  color: #e4e4e4;
+  cursor: pointer;
+}
+
+.section-do-item:hover .section-do-item-heading {
+  color: #e4e4e4;
+}
+
+.section-do-item:hover .section-do-description {
+  color: #e4e4e4;
+}
+
+.section-do-icon path {
+  transition: color 0.3s ease;
+}
+
+/* animation hover svg */
+.section-do-item:hover .section-do-icon path {
+  fill: #e4e4e4;
+}
+
+.section-do-icon {
+  margin-bottom: 30px;
+}
+
+.section-do-item-heading {
+  margin-bottom: 18px;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 600;
+  color: #1c1c1c;
+  transition: color 0.3s ease;
+}
+
+.section-do-description {
+  margin-top: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 300;
+  text-align: center;
+  color: #787878;
+  transition: color 0.3s ease;
+}
+
+/* Clients */
+
+.section-clients {
+  padding-top: 90px;
+  padding-bottom: 100px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.section-clients-heading {
+  margin-bottom: 45px;
+}
+
+.section-clients-column{
+ display: flex;
+}
+
+.section-clients-item {
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 45px 30px 35px;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+}
+
+.section-clients-testimonial {
+  margin-bottom: 35px;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 300;
+  color: #787878;
+}
+
+.section-clients-user {
+  padding-top: 28px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #e9e9e9;
+}
+
+.section-clients-avatar {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  border: 2px solid #3172b9;
+  border-radius: 50%;
+}
+
+.section-clients-username {
+  font-style: 17px;
+  line-height: 25px;
+  font-weight: 900;
+  color: #1c1c1c
+}
+
+.section-clients-user-description {
+  font-style: 14px;
+  line-height: 25px;
+  color: #787878
+}
+
+/* Contacts */
+
+.section-contacts {
+  padding-top: 85px;
+  padding-bottom: 96px;
+  border-bottom: 1px solid #dadada;
+}
+
+.section-contacts-list {
+  margin-top: 45px;
+}
+
+.section-contacts-info {
+  max-width: 210px;
+  font-size: 14px;
+  line-height: 25px;
+  color: #787878;
+}
+
+.section-contacts-icon {
+  display: block;
+  height: 30px;
+  margin-bottom: 25px;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: auto 100%;
+  background-color: transparent;
+}
+
+.section-contacts-icon-gps {
+  background-image: url('/5 LIONIC/img/gps.png');
+}
+
+.section-contacts-icon-phone {
+  background-image: url('/5 LIONIC/img/phone.png');
+}
+
+.section-contacts-icon-mail {
+  background-image: url('/5 LIONIC/img/mail.png');
+  background-size: auto 19px;
+}
+
+.section-contacts-heading {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 17px;
+  line-height: 1;
+  color: #1c1c1c;
+}
+
+.section-contacts-link {
+  color: #787878;
+}
+
+/* form */
+
+.section-form {
+  display: block;
+  padding-top: 110px;
+  padding-bottom: 120px;
+  border-bottom: 1px solid #dadada;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 36px;
+  line-height: 21px;
+  font-weight: 300;
+  color: #1c1c1c;
+}
+
+.form-description {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #dddddd;
+}
+
+.form {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.form-input {
+  min-width: 250px;
+  min-height: 60px;
+  padding: 20px 30px 25px;
+  font-size: 16px;
+  border: 1px solid #dadada;
+  border-radius: 30px;
+}
+
+.btn-sumbit {
+  min-width: 250px;
+  min-height: 60px;
+  border-radius: 30px;
+  border: 1px solid #3172b9;
+}
+
+/* Footer */
+
+.footer {
+  height: 125px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*  чтоб все блоки размещались по разные стороны */
+  height: 100%;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-copyrights {
+  font-size: 12px;
+  line-height: 17px;
+  color: #787878;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  margin-right: 25px;
+}
+
+.footer-nav {
+  margin-right: 25px;
+}
+
+.footer-nav-list {
+  display: flex;
+}
+
+.footer-nav-item {
+  font-size: 14px;
+  line-height: 1px;
+}
+
+.footer-nav-item:not(:last-child) {
+  margin-right: 34px;
+}
+
+.footer-nav-link {
+  color: #787878;
+}
+
+.footer-social-list {
+  display: flex;
+  align-items: center;
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.footer-social-icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-color: transparent;
+}
+
+.footer-social-icon-twitter {
+  width: 18px;
+  height: 15px;
+  background-image: url('/5 LIONIC/img/Twitter.png');
+}
+
+.footer-social-icon-linkedin {
+  width: 18px;
+  height: 19px;
+  background-image: url('/5 LIONIC/img/Linkedin.png');
+}
+
+.footer-social-icon-email {
+  width: 24px;
+  height: 17px;
+  background-image: url('/5 LIONIC/img/Email.png');
+}
