@@ -186,7 +186,7 @@ html {
 /* Hero */
 
 .section-hero {
-  background: url('/5 LIONIC/img/Base@2x.jpg') right center no-repeat white;
+  background: url('../5 LIONIC/img/Base@2x.jpg') right center no-repeat white;
   /* настройка фоновой картинки */
   background-size: cover;
 }
