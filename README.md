@@ -1,4 +1,4 @@
-# First_project – Набор сайтов для практики верстки
+# First_project – Мой набор сайтов для практики верстки
 
 [Евклид](https://crashmet.github.io/first_project/evklid/index)
 
@@ -8,6 +8,7 @@
 
 
 **Цель:**
+- Научиться CSS и HTML
 - Научиться адаптивной верстке
 - Научиться pixel-perfect верстке
 - Научиться boodstrap
