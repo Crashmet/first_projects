@@ -410,15 +410,15 @@ html {
 }
 
 .section-contacts-icon-gps {
-  background-image: url('/5 LIONIC/img/gps.png');
+  background-image: url('../img/gps.png');
 }
 
 .section-contacts-icon-phone {
-  background-image: url('/5 LIONIC/img/phone.png');
+  background-image: url('../img/phone.png');
 }
 
 .section-contacts-icon-mail {
-  background-image: url('/5 LIONIC/img/mail.png');
+  background-image: url('../img/mail.png');
   background-size: auto 19px;
 }
 
@@ -558,17 +558,17 @@ html {
 .footer-social-icon-twitter {
   width: 18px;
   height: 15px;
-  background-image: url('/5 LIONIC/img/Twitter.png');
+  background-image: url('../img/Twitter.png');
 }
 
 .footer-social-icon-linkedin {
   width: 18px;
   height: 19px;
-  background-image: url('/5 LIONIC/img/Linkedin.png');
+  background-image: url('../img/Linkedin.png');
 }
 
 .footer-social-icon-email {
   width: 24px;
   height: 17px;
-  background-image: url('/5 LIONIC/img/Email.png');
+  background-image: url('../img/Email.png');
 }

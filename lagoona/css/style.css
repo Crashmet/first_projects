@@ -142,7 +142,7 @@ html {
   width: 21px;
   height: 12px;
   margin-right: 7px;
-  background-image: url('/1 HW/img/head/Vector.png');
+  background-image: url('../img/head/Vector.png');
   background-position: left center;
   background-repeat: no-repeat;
   transform: translateY(-2px);
@@ -323,7 +323,7 @@ html {
   display: inline-block;
   width: 11px;
   height: 11px;
-  background-image: url('/1 HW/img/спецпр/Rectangle 2.svg');
+  background-image: url('../img/спецпр/Rectangle 2.svg');
   background-position: right center;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -426,7 +426,7 @@ html {
   display: inline-block;
   width: 12px;
   height: 12px;
-  background-image: url('/1 HW/img/спецпр/Rectangle 2.svg');
+  background-image: url('../img/спецпр/Rectangle 2.svg');
   background-position: right center;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -878,9 +878,3 @@ html {
   background-color: transparent;
 }
 
-
-/* @media (min-width: 1199.98px){
-  .container {
-    max-width: 1140px;
-  }
-} */
