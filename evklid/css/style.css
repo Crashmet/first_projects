@@ -205,22 +205,30 @@ html {
 }
 
 .header__link {
+  padding-bottom: 5px;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.2;
   color: #000000;
-  transition-property: color, border-bottom;
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
+  background-image: linear-gradient(var(--orange-color), var(--orange-color));
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease-in;
+  background-position: 50% calc(100%);
 }
 
 .header__link:hover {
-  border-bottom: 1px solid var(--orange-color);
+  background-size: 100% 2px;
+  transition: background-size 0.3s ease-in;
 }
 
 .header__link:active {
   color: var(--active-color);
-  border-bottom: 1px solid var(--active-color);
+  background-image: linear-gradient(var(--active-color), var(--active-color));
+  background-size: 100% 2px;
+  transition-property: color, background-size;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
 }
 
 .header__item:not(:last-child) {
@@ -236,16 +244,14 @@ html {
   cursor: pointer;
 }
 
-.header__search path {
-  transition: stroke 0.3s ease;
-}
-
 .header__search:hover svg path {
   stroke: var(--orange-color);
+  transition: stroke 0.3s ease;
 }
 
 .header__search:hover svg rect {
   fill: var(--orange-color);
+  transition: fill 0.3s ease;
 }
 
 .section__heading {
@@ -315,7 +321,6 @@ html {
 .big-btn {
   padding: 25px 39px;
   max-width: 280px;
-  height: 78px;
   font-weight: 700;
   font-size: 23px;
   line-height: 28px;
@@ -395,7 +400,6 @@ html {
 .us-left__btn {
   padding: 19px 38px 20px 37px;
   width: 175px;
-  height: 60px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1;
@@ -556,12 +560,10 @@ html {
   margin-right: 27px;
   padding: 20px 38px;
   width: 175px;
-  height: 60px;
 }
 
 .grey-btn {
   width: 147px;
-  height: 60px;
   color: #000000;
   border: 1px solid #000000;
   border-radius: 16px;
@@ -814,7 +816,6 @@ element.style {
 
 .footer-center__btn {
   max-width: 269px;
-  max-height: 58px;
   padding: 19px 52px;
   margin-right: 20px;
   border: none;
@@ -849,7 +850,13 @@ element.style {
   }
 }
 
-@media (max-width:1500px) {
+@media (max-width:1600px) {
+  .section-us__list{
+    max-height: 827px;
+  }
+}
+
+@media (max-width:1380px) {
 
   .container {
     padding-left: 50px;
@@ -1131,7 +1138,6 @@ element.style {
 
   .big-btn {
     padding: 13px 28px;
-    max-height: 41px;
     font-size: 12px;
     line-height: 15px;
   }
@@ -1170,7 +1176,7 @@ element.style {
   }
 
   .us-left__desc {
-    max-height: 140px;
+    max-height: 160px;
     margin-bottom: 12px;
     font-weight: 400;
     font-size: 14px;
@@ -1181,7 +1187,6 @@ element.style {
   .us-left__btn {
     padding: 12px 44px;
     width: 162px;
-    height: 39px;
     font-weight: 700;
     font-size: 12px;
     line-height: 15px;
@@ -1249,7 +1254,6 @@ element.style {
     margin-right: 10px;
     padding: 12px 35px;
     max-width: 155px;
-    height: 39px;
     font-size: 12px;
     line-height: 15px;
   }
@@ -1258,7 +1262,6 @@ element.style {
     margin-right: 0;
     padding: 12px 30px;
     max-width: 110px;
-    height: 38px;
   }
 
   .section-question {
@@ -1282,6 +1285,7 @@ element.style {
   }
 
   .footer-center {
+    margin-right: 0px;
     margin-bottom: 16px;
     padding-bottom: 12px;
     border-bottom: 1px solid #414141;
@@ -1336,5 +1340,16 @@ element.style {
 
   .header-menu {
     height: 397px;
+  }
+}
+
+@media (max-width:300px) {
+  .section-job__left job-left{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .job-left__btn{
+    margin-bottom: 20px;
   }
 }
